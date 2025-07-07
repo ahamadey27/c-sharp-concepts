@@ -10,9 +10,19 @@ namespace CSharpConcepts
     {
         public void Triangle()
         {
-            Console.WriteLine("Enter three sides of a shape to see if it's a triangle");
+            Console.WriteLine("Angles of a shape to see if its a triangle");
+
+            int[] triangleSides = new int[3];
+            int triangleSum = 0;
+
+            for (int i = 0; i < triangleSides.Length; i++)
+            {
+                Console.Write($"Enter angle {i + 1}: ");
+                 triangleSum += Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine(triangleSum == 180 ? "Shape is a triangle" : "Shape is not a triangle");
 
         }
-
     }
 }
