@@ -19,7 +19,7 @@ namespace CSharpConcepts
 
             string reversed = new string(charWord);
 
-            if (word == reversed.ToString())
+            if (word == reversed)
             {
                 Console.WriteLine($"{word} is a palindrome");
             }
