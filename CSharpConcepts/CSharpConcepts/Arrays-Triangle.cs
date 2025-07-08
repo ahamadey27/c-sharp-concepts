@@ -8,7 +8,7 @@ namespace CSharpConcepts
 {
     public class Arrays_Triangle
     {
-        public void Triangle()
+        public static void Triangle()
         {
             Console.WriteLine("Angles of a shape to see if its a triangle");
 

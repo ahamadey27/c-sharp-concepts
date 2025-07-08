@@ -8,7 +8,7 @@ namespace CSharpConcepts
 {
     public class Array_Sorting
     {
-        public void ArraySorting()
+        public static void ArraySorting()
         {
             int[] numbers = new int[] { 1, 5, 3, 7, 9, 0, 5, 34, 2 };
             Array.Sort(numbers);
