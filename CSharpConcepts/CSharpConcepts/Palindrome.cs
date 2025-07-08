@@ -17,7 +17,9 @@ namespace CSharpConcepts
                 charWord[i] = word[word.Length - 1 - i];
             }
 
-            if (word == charWord.ToString())
+            string reversed = new string(charWord);
+
+            if (word == reversed.ToString())
             {
                 Console.WriteLine($"{word} is a palindrome");
             }
@@ -25,6 +27,8 @@ namespace CSharpConcepts
             {
                 Console.WriteLine($"{word} is not a palindrome");
             }
+
+
                 
 
         }

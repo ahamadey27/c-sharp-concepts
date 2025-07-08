@@ -7,8 +7,9 @@ class Program
 
 
         //Arrays_Triangle.Triangle();
-        FizzBuzz.fizzBuzz();
+        //FizzBuzz.fizzBuzz();
         //Array_Sorting.ArraySorting();
+        Palindrome.palindrome("aeda");
     }
     
    
