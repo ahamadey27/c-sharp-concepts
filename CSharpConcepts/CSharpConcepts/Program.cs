@@ -14,8 +14,8 @@ class Program
         //Arrays.ClearArray();
         //Arrays.IndexOf();
         //Lists.ListBasic();
-        Dictionaries.dictionaryBasic();
-
+        //Dictionaries.dictionaryBasic();
+        Dictionaries.teacherExample();
     }
 
 
