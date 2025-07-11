@@ -11,7 +11,8 @@ class Program
         //Array_Sorting.ArraySorting();
         //Palindrome.palindrome("ada");
         //Arrays.Array01();
-        Arrays.ClearArray();
+        //Arrays.ClearArray();
+        Arrays.IndexOf();
 
     }
     

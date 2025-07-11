@@ -37,5 +37,20 @@ namespace CSharpConcepts
             }
         }
 
+        public static void IndexOf()
+        {
+            int[] numbers = new int[] { 1, 7, 6, 2, 8, 3 };
+            Console.WriteLine("Enter number to search");
+            int search = Convert.ToInt32(Console.ReadLine());
+
+            int position = Array.IndexOf(numbers, search);
+
+            if (position >= 0)
+            {
+                Console.WriteLine($"Number {search} has been found at position {position}");
+            }
+
+        }
+
     }
 }
