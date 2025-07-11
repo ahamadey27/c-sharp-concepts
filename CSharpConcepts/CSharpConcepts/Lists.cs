@@ -6,18 +6,13 @@
         public static void ListBasic()
         {
             List<int> listNumbers = new List<int>(); //how to add{ 1, 2, 4, 5 };
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 7; i++)
             {
                 Console.Write($"Enter a number {i + 1}: ");
                 listNumbers.Add(Convert.ToInt32(Console.ReadLine()));
             }
 
-            //Use foreach instead
-            //for (int i = 0; i < listNumbers.Count; i++)
-            //{
-            //    Console.WriteLine(listNumbers[i]);
-
-            //}
+            listNumbers.RemoveRange(2, 3); //removes from index 2 through index 5
 
             foreach (var item in listNumbers)
             {
