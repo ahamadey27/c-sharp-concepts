@@ -12,7 +12,8 @@ class Program
         //Palindrome.palindrome("ada");
         //Arrays.Array01();
         //Arrays.ClearArray();
-        Arrays.IndexOf();
+        //Arrays.IndexOf();
+        Lists.ListBasic();
 
     }
     

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharpConcepts
+﻿namespace CSharpConcepts
 {
     public class Lists
     {
@@ -14,18 +8,24 @@ namespace CSharpConcepts
             List<int> listNumbers = new List<int>(); //how to add{ 1, 2, 4, 5 };
             for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine($"Enter a number {i + 1}: ");
+                Console.Write($"Enter a number {i + 1}: ");
                 listNumbers.Add(Convert.ToInt32(Console.ReadLine()));
             }
 
-            for (int i = 0; i < listNumbers.Count; i++)
-            {
-                Console.WriteLine(listNumbers[i]);
+            //Use foreach instead
+            //for (int i = 0; i < listNumbers.Count; i++)
+            //{
+            //    Console.WriteLine(listNumbers[i]);
 
+            //}
+
+            foreach (var item in listNumbers)
+            {
+                Console.Write(item);
             }
 
         }
-        
+
 
     }
 }
