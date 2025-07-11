@@ -13,6 +13,7 @@
             }
 
             listNumbers.RemoveRange(2, 3); //removes from index 2 through index 5
+            listNumbers.RemoveAt(0);
 
             foreach (var item in listNumbers)
             {
