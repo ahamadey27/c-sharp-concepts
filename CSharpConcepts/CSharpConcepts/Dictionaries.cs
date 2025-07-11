@@ -12,6 +12,14 @@
                 {3, "Three" }
             };
 
+            //how to cycle through elements of a list
+            for (int i = 0; i < dictOne.Count; i++)
+            {
+                KeyValuePair<int, string> pair = dictOne.ElementAt(i);
+
+
+            }
+
 
 
 
