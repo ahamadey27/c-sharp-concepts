@@ -13,11 +13,12 @@ class Program
         //Arrays.Array01();
         //Arrays.ClearArray();
         //Arrays.IndexOf();
-        Lists.ListBasic();
+        //Lists.ListBasic();
+        Dictionaries.dictionaryBasic();
 
     }
-    
-   
+
+
 }
 
 

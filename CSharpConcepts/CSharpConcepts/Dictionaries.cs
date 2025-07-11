@@ -16,8 +16,13 @@
             for (int i = 0; i < dictOne.Count; i++)
             {
                 KeyValuePair<int, string> pair = dictOne.ElementAt(i);
+                Console.WriteLine($"{pair.Key} - {pair.Value}");
+            }
 
-
+            //Foreach loop better to cycle through dictionary elements
+            foreach (KeyValuePair<int, string> pair in dictOne)
+            {
+                Console.WriteLine($"{pair.Key} - {pair.Value}");
             }
 
 
