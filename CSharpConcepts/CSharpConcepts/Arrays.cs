@@ -8,7 +8,7 @@ namespace CSharpConcepts
 {
     public class Arrays
     {
-        public void Array01()
+        public static void Array01()
         {
             Console.Write("enter numbers that will go in an array");
 
@@ -23,6 +23,17 @@ namespace CSharpConcepts
             for (int i = 0; i < arrayIn.Length; i++)
             {
                 Console.WriteLine($"Index {i + 1} is {arrayIn[i]}");
+            }
+        }
+
+        public static void ClearArray()
+        {
+            int[] numbers = new int[] { 1, 7, 6, 2, 8, 3 };
+            Array.Clear(numbers, 0, numbers.Length);
+
+            foreach (var item in numbers)
+            {
+                Console.Write($"{item}");
             }
         }
 

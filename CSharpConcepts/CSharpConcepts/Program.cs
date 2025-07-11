@@ -9,7 +9,10 @@ class Program
         //Arrays_Triangle.Triangle();
         //FizzBuzz.fizzBuzz();
         //Array_Sorting.ArraySorting();
-        Palindrome.palindrome("ada");
+        //Palindrome.palindrome("ada");
+        //Arrays.Array01();
+        Arrays.ClearArray();
+
     }
     
    
