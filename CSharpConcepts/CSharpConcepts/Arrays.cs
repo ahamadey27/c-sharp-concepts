@@ -43,11 +43,15 @@ namespace CSharpConcepts
             Console.WriteLine("Enter number to search");
             int search = Convert.ToInt32(Console.ReadLine());
 
-            int position = Array.IndexOf(numbers, search);
+            int position = Array.IndexOf(numbers, search, 2); //last argument is where search starts...if fourth argument added third is start search and 4th is end search of index
 
             if (position >= 0)
             {
                 Console.WriteLine($"Number {search} has been found at position {position}");
+            }
+            else
+            {
+                Console.WriteLine("Number search has not been found");
             }
 
         }
