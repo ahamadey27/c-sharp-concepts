@@ -39,13 +39,22 @@
             //Not a good way to print value
             //Console.WriteLine(teachers["Math"]);
 
-            if (teachers.TryGetValue("Mah", out string teacher))
+            if (teachers.TryGetValue("Math", out string teacher))
             {
                 Console.WriteLine(teacher);
+
+                teachers["Math"] = "Samuel";
             }
             else
             {
                 Console.WriteLine("Not found");
+            }
+
+            teachers.Remove("Math");
+
+            foreach (var items in teachers)
+            {
+                Console.WriteLine($"{items.Key} - {items.Value}");
             }
         }
 
