@@ -50,7 +50,15 @@
                 Console.WriteLine("Not found");
             }
 
-            teachers.Remove("Math");
+            if (teachers.ContainsKey("Math"))
+            {
+                teachers.Remove("Math");
+            }
+            else
+            {
+                Console.Write("Math not found");
+            }
+
 
             foreach (var items in teachers)
             {
