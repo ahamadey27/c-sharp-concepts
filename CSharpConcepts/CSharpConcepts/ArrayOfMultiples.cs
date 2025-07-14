@@ -8,6 +8,7 @@
         //loops through and insert into array
         //print final array
         public static void ArrayMult()
+
         {
             int num = 7;
             int length = 5;
@@ -24,9 +25,5 @@
                 Console.Write($"{item}, ");
             }
         }
-
-
-
-
     }
 }

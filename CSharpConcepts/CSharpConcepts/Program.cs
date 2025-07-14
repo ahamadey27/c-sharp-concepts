@@ -17,7 +17,9 @@ class Program
         //Dictionaries.dictionaryBasic();
         //Dictionaries.teacherExample();
         //OddEvenSplit.OddEven();
-        ArrayOfMultiples.ArrayMult();
+        //ArrayOfMultiples.ArrayMult();
+
+        TryParse.TryPar();
     }
 
 
