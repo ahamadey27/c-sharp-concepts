@@ -13,7 +13,8 @@
             int length = 5;
             int[] result = new int[length];
 
-            for (int i = 1; i < result.Length; i++)
+            //assigns into array from 0 -4 and for loop 1 through 5
+            for (int i = 1; i <= result.Length; i++)
             {
                 result[i - 1] = num * i;
             }
