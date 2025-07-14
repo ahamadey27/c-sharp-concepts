@@ -5,6 +5,28 @@
     //add respective numbers to lists and print
     public class OddEvenSplit
     {
-        List<int> odd =
+        public static void OddEven()
+        {
+            List<int> odd = new List<int>();
+            List<int> even = new List<int>();
+
+            for (int i = 0; i <= 0; i++)
+            {
+                if (i % 2 == 0) //checks for even number
+                {
+                    even.Add(i);
+                }
+                else
+                {
+                    odd.Add(i);
+                }
+            }
+
+        }
+
+
+
+
+
     }
 }
