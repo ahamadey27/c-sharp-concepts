@@ -15,7 +15,8 @@ class Program
         //Arrays.IndexOf();
         //Lists.ListBasic();
         //Dictionaries.dictionaryBasic();
-        Dictionaries.teacherExample();
+        //Dictionaries.teacherExample();
+        OddEvenSplit.OddEven();
     }
 
 
