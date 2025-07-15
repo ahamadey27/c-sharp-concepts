@@ -27,17 +27,24 @@
             int addition = intOne + intTwo;
             int subrtract = intOne - intTwo;
             int multiply = intOne * intTwo;
-            int divide = intOne / intTwo;
 
             switch (userChar)
             {
                 case '+': Console.WriteLine($"{intOne} + {intTwo} = {addition}"); break;
                 case '-': Console.WriteLine($"{intOne} - {intTwo} = {subrtract}"); break;
                 case '*': Console.WriteLine($"{intOne} * {intTwo} = {multiply}"); break;
-                case '/': Console.WriteLine($"{intOne} / {intTwo} = {divide}"); break;
+                case '/':
+                    try
+                    {
+                        int divide = intOne / intTwo;
+                        Console.WriteLine($"{intOne} / {intTwo} = {divide}");
+                    }
+                    catch (DivideByZeroException)
+                    {
+                        Console.WriteLine("Cannot divide by zero");
+                    }
+                    break;
             }
-
-
         }
     }
 }
