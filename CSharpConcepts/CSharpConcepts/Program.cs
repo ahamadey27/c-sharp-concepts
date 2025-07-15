@@ -1,6 +1,4 @@
-﻿using CSharpConcepts;
-
-class Program
+﻿class Program
 {
     static void Main(string[] args)
     {
@@ -19,7 +17,8 @@ class Program
         //OddEvenSplit.OddEven();
         //ArrayOfMultiples.ArrayMult();
 
-        TryParse.TryPar();
+        //TryParse.TryPar();
+        //FizzBuzz2.FizzBuzz();
     }
 
 
