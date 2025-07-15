@@ -1,4 +1,6 @@
-﻿class Program
+﻿using CSharpConcepts;
+
+class Program
 {
     static void Main(string[] args)
     {
@@ -19,6 +21,8 @@
 
         //TryParse.TryPar();
         //FizzBuzz2.FizzBuzz();
+
+        CalcApp.Calc();
     }
 
 

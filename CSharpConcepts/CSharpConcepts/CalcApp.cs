@@ -6,25 +6,22 @@
         {
             bool isValid;
             char userChar;
-            Console.WriteLine("Enter first int");
+            Console.Write("Enter first int: ");
             int intOne = Convert.ToInt32(Console.ReadLine());
 
             do
             {
-                Console.WriteLine("Enter operator");
+                Console.Write("Enter operator (+, -, *, /): ");
                 string userInput = Console.ReadLine();
-                isValid = char.TryParse(userInput, out userChar);
+                isValid = char.TryParse(userInput, out userChar) && (userChar == '+' || userChar == '-' || userChar == '*' || userChar == '/');
 
-                if (userChar == '+' || userChar == '-' || userChar == '/' || userChar == '*')
+                if (!isValid)
                 {
-                    Console.WriteLine("Enter second int");
-                }
-                else
-                {
-                    Console.WriteLine("Enter a valid integer");
+                    Console.WriteLine("Invalid Operator");
                 }
             } while (!isValid);
 
+            Console.WriteLine("Enter second int: ");
             int intTwo = Convert.ToInt32(Console.ReadLine());
 
             int addition = intOne + intTwo;
