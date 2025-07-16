@@ -24,7 +24,8 @@ class Program
 
         //CalcApp.Calc();
 
-        AreaOfTriangle.AreaTri();
+        //AreaOfTriangle.AreaTri();
+        SumOfNumberInArray.SumNumArray();
     }
 
 
