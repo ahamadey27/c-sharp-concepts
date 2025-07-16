@@ -4,25 +4,46 @@
     {
         public static void Calc()
         {
-            bool isValid;
-            char userChar;
-            Console.Write("Enter first int: ");
-            int intOne = Convert.ToInt32(Console.ReadLine());
+            int intOne;
+            bool isValidNumber;
 
+            do
+            {
+                Console.Write("Enter first int: ");
+                isValidNumber = int.TryParse(Console.ReadLine(), out intOne);
+
+                if (!isValidNumber)
+                {
+                    Console.WriteLine("Invalid number. Please enter a valid integer.");
+                }
+            } while (!isValidNumber);
+
+            bool isValidOperator;
+            char userChar;
             do
             {
                 Console.Write("Enter operator (+, -, *, /): ");
                 string userInput = Console.ReadLine();
-                isValid = char.TryParse(userInput, out userChar) && (userChar == '+' || userChar == '-' || userChar == '*' || userChar == '/');
+                isValidOperator = char.TryParse(userInput, out userChar) && (userChar == '+' || userChar == '-' || userChar == '*' || userChar == '/');
 
-                if (!isValid)
+                if (!isValidOperator)
                 {
                     Console.WriteLine("Invalid Operator");
                 }
-            } while (!isValid);
+            } while (!isValidOperator);
 
-            Console.WriteLine("Enter second int: ");
-            int intTwo = Convert.ToInt32(Console.ReadLine());
+            int intTwo;
+            do
+            {
+                Console.Write("Enter second int: ");
+                isValidNumber = int.TryParse(Console.ReadLine(), out intTwo);
+
+                if (!isValidNumber)
+                {
+                    Console.WriteLine("Invalid number. Please enter a valid integer.");
+                }
+            } while (!isValidNumber);
+
 
             int addition = intOne + intTwo;
             int subrtract = intOne - intTwo;
@@ -36,7 +57,7 @@
                 case '/':
                     try
                     {
-                        int divide = intOne / intTwo;
+                        double divide = (double)intOne / intTwo;
                         Console.WriteLine($"{intOne} / {intTwo} = {divide}");
                     }
                     catch (DivideByZeroException)
