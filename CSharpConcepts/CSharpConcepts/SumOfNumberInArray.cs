@@ -15,11 +15,14 @@
                 newArray[i] = Convert.ToInt32(Console.ReadLine());
             }
 
-            int arraySum;
+            int arraySum = 0;//must initialize, not just declare this!
 
+            foreach (int item in newArray)
+            {
+                arraySum += item;
+            }
 
-
-
+            Console.WriteLine($"The length of the array is {arrayLength} and the sum is {arraySum}");
         }
     }
 }
