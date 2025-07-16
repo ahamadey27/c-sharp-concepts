@@ -22,7 +22,9 @@ class Program
         //TryParse.TryPar();
         //FizzBuzz2.FizzBuzz();
 
-        CalcApp.Calc();
+        //CalcApp.Calc();
+
+        AreaOfTriangle.AreaTri();
     }
 
 

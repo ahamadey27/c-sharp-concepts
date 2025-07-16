@@ -3,10 +3,10 @@
     //Ask user for width and height, store them
     //create function to calculate area using (width + height) / 2
     //Call in main and print area of triangle
-    public class AreaOfRectangle
+    public class AreaOfTriangle
     {
 
-        public static void AreaRect()
+        public static void AreaTri()
         {
             bool isValid;
             int width;
@@ -37,11 +37,6 @@
             decimal areaTriangle = (width + height) / 2;
 
             Console.Write($"The area of this triangle is {areaTriangle}");
-
-
-
-
-
         }
 
     }
